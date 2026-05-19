@@ -1,0 +1,50 @@
+{
+    "menu_items":{
+        "Chocnut":{
+            "ingredients":{
+                "sugar":20,
+                "chocolate":40,
+                "peanut":40
+            },
+            "cost":20
+        },
+        "Yema":{
+            "ingredients":{
+                "custard":80,
+                "sugar":20
+            },
+            "cost":15
+        },
+        "Pastillas":{
+            "ingredients":{
+                "milk":80,
+                "sugar":20
+            },
+            "cost":10
+        },
+        "Mikmik":{
+            "ingredients":{
+                "milk":80,
+                "sugar":20
+            },
+            "cost":10
+        },
+        "Potchi":{
+            "ingredients":{
+                "strawberry":80,
+                "sugar":20
+            },
+            "cost":10
+        }
+    },
+    "resources": {
+        "sugar": 500,
+        "milk": 500,
+        "chocolate": 500,
+        "peanut": 500,
+        "strawberry": 500,
+        "custard": 500
+    },
+    "profit":0,
+    "CURRENCY":"₱"
+}
