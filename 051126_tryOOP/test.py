@@ -1,18 +1,26 @@
 import json
 
 #load data
-with open("data.json", "r") as f:
+with open("data.json", "r", encoding="utf8") as f:
     data = json.load(f)
 
-# menu_items = ", ".join(data["menu_items"].keys())
 
+menu_items = data["menu_items"]
+currency = data["CURRENCY"]
+
+
+print("``````````````````````````````````````````````")
 print(f"Welcome to Candy Shop")
+for item_name, item_data in menu_items.items():
+    print(f"{currency}{item_data["cost"]} {item_name}")
+print("``````````````````````````````````````````````")
 
-for m in data["menu_items"]:
-    print(m)
+user_order = input("Enter your order:").lower()
 
-user_choice = input("Enter your order:").lower()
-print(user_choice)
+# find order
+for item_name, item_data in menu_items.items():
+    # print(f"Name: {item_name} | Data: {item_data}")
+    if item_name.lower() == user_order:
+        print(f"Name: {item_name} | Data: {item_data}")
 
-print(data["menu_items"][user_choice]["cost"])
 
