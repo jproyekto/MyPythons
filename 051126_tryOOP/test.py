@@ -14,5 +14,5 @@ for m in data["menu_items"]:
 user_choice = input("Enter your order:").lower()
 print(user_choice)
 
-print(data["menu_items"].lower()[user_choice]["cost"])
+print(data["menu_items"][user_choice]["cost"])
 
